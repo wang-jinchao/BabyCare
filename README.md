@@ -54,7 +54,7 @@ You might need administrator privileges to execute these commands.
  <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/> </div>
  
 * Capture a variety of images of the pattern so that you have accounted for as much of the image frame as possible. Lens distortion increases radially from the center of the image and sometimes is not uniform across the image frame. To capture this lens distortion, the pattern must appear close to the edges of the captured images.
-<div align=center><img width='80%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/></div>
+<div align=center><img width='40%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/></div>
 <div align=center><img width='40%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
 
 <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/1.png"/></div>
