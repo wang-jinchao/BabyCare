@@ -70,7 +70,7 @@ You might need administrator privileges to execute these commands.
 ## Distance Measurement
 
  <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/g.png"/> </div>
-&emsp;&emsp; Using image semantic segmentation to get pixel-level image tags. The neural network model is an improvement from segnet. The basic structure is as shown above
+&emsp;&emsp; Using image semantic segmentation to get pixel-level image tags. The neural network model is an improvement from segnet. The basic structure is as shown above.  
 &emsp;&emsp;Through Hough Transform to detection line and using convex hulls together to measure the minimum pixel distance on the image. Using the Transformation from the 3D space to the pixel plane, with the method of binocular vision to calculate the height from the camera to the plane
     ## Expression Detection
 TBD
