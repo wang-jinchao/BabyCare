@@ -65,7 +65,7 @@ You might need administrator privileges to execute these commands.
      <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/f.png"/> </div>
 
 ##   Experimental model
- <div align=center><img width='80%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/325.png"/> </div>
+ <div align=center><img width='60%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/325.png"/> </div>
  
 ## Distance Measurement
 
@@ -74,6 +74,10 @@ You might need administrator privileges to execute these commands.
 
 
 &emsp;&emsp;Through Hough Transform to detection line and using convex hulls together to measure the minimum pixel distance on the image. Using the Transformation from the 3D space to the pixel plane, with the method of binocular vision to calculate the height from the camera to the plane
+   
+###    Usage
+`python main.py`
+scsd
     ## Expression Detection
 TBD
     
