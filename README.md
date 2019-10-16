@@ -65,29 +65,8 @@ You might need administrator privileges to execute these commands.
      <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/e.png"/> </div>
      <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/f.png"/> </div>
 
-
-The Data Browser pane displays a list of image pairs with IDs. These image pairs contain a detected pattern. To view an image, select it from the Data Browser pane.The Image pane displays the selected checkerboard image pair with green circles to indicate detected points. You can verify that the corners were detected correctly using the zoom controls. The yellow square indicates the (0,0) origin. The X and Y arrows indicate the checkerboard axes orientation.
-
-Evaluate Calibration Results
-
-
-
-
-
-
-3040*1520			2560*720
-1520*1520			1280*720		
-
-
-
 ## Distance Measurement
-TBD
-python eval.py \
-  --resdir eval \
-  --outdir output/camvid/segnet \
-  --checkpoint_dir output/camvid/segnet/trained_model \
-  --num_sample 44
-
+Through Hough Transform to detection line and using convex hulls together to measure the minimum pixel distance on the image. Using the Transformation from the 3D space to the pixel plane, with the method of binocular vision to calculate the height from the camera to the plane
 ## Expression Detection
 TBD
     
