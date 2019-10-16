@@ -2,8 +2,8 @@
 &emsp;&emsp;Infant monitoring application based on deep learning and stereo vision
 * [x] Distance Measurement
 * [ ] Expression Detection
- 
-![](https://github.com/wang-jinchao/BabyCare/blob/master/image/gifhome_480x360.gif)
+<div align=center><img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/gifhome_480x360.gif"/></div>
+
 ### Requirement:
 * python3.6
 * tenosorflow&ge;1.12(Some problem may occur; such as [mkl](https://github.com/tensorflow/tensorflow/issues/23145))
