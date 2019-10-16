@@ -52,13 +52,13 @@ You might need administrator privileges to execute these commands.
 * Make sure the checkerboard pattern is fully visible in both images of each stereo pair.
 
 
-<div align=center><img width="50%" height="50%" src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/1.png"/></div>
-
-<img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/>
-<img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/>
-<img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/>
-<img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/checkerboard_angle.png"/>
-<img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/stereocalibration_reprojectionerror.png"/>
+<div align=center>img width="50%" height="50%" src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/1.png"/></div>
+</div>
+<div align=center>img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/></div>
+<div align=center>img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
+<div align=center>img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/></div>
+<div align=center>img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/checkerboard_angle.png"/></div>
+<div align=center>img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/stereocalibration_reprojectionerror.png"/></div>
 
 
 The Data Browser pane displays a list of image pairs with IDs. These image pairs contain a detected pattern. To view an image, select it from the Data Browser pane.The Image pane displays the selected checkerboard image pair with green circles to indicate detected points. You can verify that the corners were detected correctly using the zoom controls. The yellow square indicates the (0,0) origin. The X and Y arrows indicate the checkerboard axes orientation.
