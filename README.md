@@ -50,6 +50,12 @@ You might need administrator privileges to execute these commands.
 * Place the checkerboard at an angle less than 45 degrees relative to the camera plane.
 * Capture a variety of images of the pattern so that you have accounted for as much of the image frame as possible. Lens distortion increases radially from the center of the image and sometimes is not uniform across the image frame. To capture this lens distortion, the pattern must appear close to the edges of the captured images.
 * Make sure the checkerboard pattern is fully visible in both images of each stereo pair.
+![，，，](https://github.com/wang-jinchao/BabyCare/blob/master/image/1.png)
+![，，，](https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png)
+![，，，](https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png)
+![，，，](https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png)
+![，，，](https://github.com/wang-jinchao/BabyCare/blob/master/image/checkerboard_angle.png)
+![，，，](https://github.com/wang-jinchao/BabyCare/blob/master/image/stereocalibration_reprojectionerror.png)
 ![，，，]()
 
 
