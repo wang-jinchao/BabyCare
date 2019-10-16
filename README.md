@@ -52,7 +52,8 @@ You might need administrator privileges to execute these commands.
 * Make sure the checkerboard pattern is fully visible in both images of each stereo pair.
 
 
-<img width="50%" height="50%" src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/1.png"/>
+<div align=center><img width="50%" height="50%" src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/1.png"/></div>
+
 <img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/>
 <img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/>
 <img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/>
