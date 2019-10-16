@@ -2,6 +2,7 @@
 &emsp;&emsp;Infant monitoring application based on deep learning and stereo vision
 * [x] Distance Measurement
 * [ ] Expression Detection
+ 
 ![](https://github.com/wang-jinchao/BabyCare/blob/master/image/gifhome_480x360.gif)
 ### Requirement:
 * python3.6
