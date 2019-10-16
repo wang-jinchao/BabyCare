@@ -23,8 +23,58 @@ You might need administrator privileges to execute these commands.
     cd "matlabroot/extern/engines/python"
     python setup.py install
     
+
+
+
+## Stereo Camera Calibration
+1. Prepare images, camera, and calibration pattern.
+2. Add image pairs.
+3. Calibrate the stereo camera.
+4. Evaluate calibration accuracy.
+5. Adjust parameters to improve accuracy (if necessary).
+6. Export the parameters object.
+
+### chessboard :
+&emsp;&emsp;To improve the results, use between 10 and 20 images of the calibration pattern. The calibrator requires at least three images. Use uncompressed images or lossless compression formats such as **PNG**. The calibration pattern and the camera setup must satisfy a set of requirements to work with the calibrator. 
+ &emsp;&emsp;The checkerboard pattern you use must not be square. One side must contain an even number of squares and the other side must contain an odd number of squares. Therefore, the pattern contains two black corners along one side and two white corners on the opposite side. This criteria enables the app to determine the orientation of the pattern. The calibrator assigns the longer side to be the x-direction.
+
+| Size  | Formats | Number<span class="Apple-tab-span" style="white-space:pre"></span> | Spacing  |
+| :-: | :-: | :-: | :-: |
+| A3 | 420mm×297mm | 10*7 | 42 |
+
+* Attach the checkerboard printout to a flat surface. Imperfections on the surface can affect the accuracy of the calibration.
+* Measure one side of the checkerboard square. You need this measurement for calibration. The size of the squares can vary depending on printer settings.
+* To improve the detection speed, set up the pattern with as little background clutter as possible.
+* Keep the pattern in focus, but do not use autofocus.Do not modify the images, (for example, do not crop them).
+* Capture the images of the pattern at a distance roughly equal to the distance from your camera to the objects of interest. For example, if you plan to measure objects from 2 meters, keep your pattern approximately 2 meters from the camera.
+* Place the checkerboard at an angle less than 45 degrees relative to the camera plane.
+* Capture a variety of images of the pattern so that you have accounted for as much of the image frame as possible. Lens distortion increases radially from the center of the image and sometimes is not uniform across the image frame. To capture this lens distortion, the pattern must appear close to the edges of the captured images.
+* Make sure the checkerboard pattern is fully visible in both images of each stereo pair.
+![，，，]()
+
+
+The Data Browser pane displays a list of image pairs with IDs. These image pairs contain a detected pattern. To view an image, select it from the Data Browser pane.The Image pane displays the selected checkerboard image pair with green circles to indicate detected points. You can verify that the corners were detected correctly using the zoom controls. The yellow square indicates the (0,0) origin. The X and Y arrows indicate the checkerboard axes orientation.
+
+Evaluate Calibration Results
+
+
+
+
+
+
+3040*1520			2560*720
+1520*1520			1280*720		
+
+
+
 ## Distance Measurement
 TBD
+python eval.py \
+  --resdir eval \
+  --outdir output/camvid/segnet \
+  --checkpoint_dir output/camvid/segnet/trained_model \
+  --num_sample 44
+
 ## Expression Detection
 TBD
     
