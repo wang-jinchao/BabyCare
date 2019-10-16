@@ -6,10 +6,9 @@
 function [cor1,fdx] = steroVision(centroids)
 % I1 = imread('l1.png');%¶ÁÈ¡×óÓÒÍ¼Æ¬
 % I2 = imread('r1.png');
-% I1 = imread('left_cam.png');%¶ÁÈ¡×óÓÒÍ¼Æ¬
-% I2 = imread('right_cam.png');
-I1 = imread('3l.png');%¶ÁÈ¡×óÓÒÍ¼Æ¬
-I2 = imread('3r.png');
+I1 = imread('left_cam.png');%¶ÁÈ¡×óÓÒÍ¼Æ¬
+I2 = imread('right_cam.png');
+
 
 % size(centroids)
 % size(centroids_t)
@@ -49,8 +48,8 @@ disparityMap = disparity(rgb2gray(J1), rgb2gray(J2), 'BlockSize',15,'DisparityRa
 % disparityMap
 %5555
 % centroids = [825,612]
-% centroids_t = [770,612]
-
+centroids_t = [640,360];
+centroids_X = round((centroids+centroids_t)/2)
 % figure;imshow(disparityMap, [0, 400]);
 % title('Disparity Map');
 % colormap jet
@@ -66,12 +65,14 @@ pointCloud3D = pointCloud3D/1000;
 %7777
 
 Z = double(pointCloud3D(:,:,3));
-mask = repmat(Z> 0&Z <1000,[1,1,3]);
+mask = repmat(Z> 0&Z <2,[1,1,3]);
 J1(~mask)= 0;
 
 figure;imshow(J1,'InitialMagnification',100)
 hold on
 plot(centroids(1),centroids(2),'y-o','MarkerSize',10,'MarkerFaceColor','r')
+plot(centroids_t(1),centroids_t(2),'y-o','MarkerSize',10,'MarkerFaceColor','r')
+plot(centroids_X(1),centroids_X(2),'y-o','MarkerSize',10,'MarkerFaceColor','r')
 % plot(centroids_t(1),centroids_t(2),'y-o','MarkerSize',10,'MarkerFaceColor','r');
 % plot(centroids(1,1),centroids(1,2),'y-o','MarkerSize',10,'MarkerFaceColor','r');
 % plot(centroids_t(1,1),centroids_t(1,2),'y-o','MarkerSize',10,'MarkerFaceColor','r');
@@ -86,16 +87,29 @@ Y = pointCloud3D(:, :, 2);
 Z = pointCloud3D(:, :, 3);
 centroids3D = [X(centroidsIdx), Y(centroidsIdx), Z(centroidsIdx)];
 
-% centroidsIdx_t = sub2ind(size(disparityMap), centroids_t(2), centroids_t(1));
+centroidsIdx_t = sub2ind(size(disparityMap), centroids_t(2), centroids_t(1));
 % % centroidsIdx_t = sub2ind(size(disparityMap), centroids_t{:, 2}, centroids_t{:, 1});
-% X = pointCloud3D(:, :, 1);
-% Y = pointCloud3D(:, :, 2);
-% Z = pointCloud3D(:, :, 3);
-% centroids3D_t = [X(centroidsIdx_t), Y(centroidsIdx_t), Z(centroidsIdx_t)];
+X = pointCloud3D(:, :, 1);
+Y = pointCloud3D(:, :, 2);
+Z = pointCloud3D(:, :, 3);
+centroids3D_t = [X(centroidsIdx_t), Y(centroidsIdx_t), Z(centroidsIdx_t)];
+
+centroidsIdx_X = sub2ind(size(disparityMap), centroids_X(2), centroids_X(1));
+% centroidsIdx_clct = sub2ind(size(disparityMap), centroids_t{:, 2}, centroids_t{:, 1});
+X = pointCloud3D(:, :, 1);
+Y = pointCloud3D(:, :, 2);
+Z = pointCloud3D(:, :, 3);
+centroids3D_X = [X(centroidsIdx_X), Y(centroidsIdx_X), Z(centroidsIdx_X)];
 
 cor1 = centroids3D;
-% cor2 = centroids3D_t
+cor2 = centroids3D_t;
+cor3 = centroids3D_X;
+cor = [cor1; cor2; cor3];
+cor(isnan(cor)) = 10;
 
+[z, x] = min(cor,[],1);
+
+cor1 = cor(x(3),:);
 % diff = abs(centroids3D(1,1)-centroids3D_t(1,1))
 % dists = sqrt(sum(centroids3D .^ 2))
 fdx = (calibrationSession.CameraParameters.CameraParameters1.IntrinsicMatrix(1)+calibrationSession.CameraParameters.CameraParameters1.IntrinsicMatrix(5))*0.5;
