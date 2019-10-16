@@ -50,7 +50,7 @@ You might need administrator privileges to execute these commands.
 * Capture the images of the pattern at a distance roughly equal to the distance from your camera to the objects of interest. For example, if you plan to measure objects from 2 meters, keep your pattern approximately 2 meters from the camera.
 * Place the checkerboard at an angle less than 45 degrees relative to the camera plane.
 *  Make sure the checkerboard pattern is fully visible in both images of each stereo pair.
- <div align=center><img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/></div>
+ <div align=center><img width="70%" height="70%" src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/></div>
 * Capture a variety of images of the pattern so that you have accounted for as much of the image frame as possible. Lens distortion increases radially from the center of the image and sometimes is not uniform across the image frame. To capture this lens distortion, the pattern must appear close to the edges of the captured images.
 <div align=center><img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/></div>
 <div align=center><img width="50%" height="50%" src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
