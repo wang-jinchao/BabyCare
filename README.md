@@ -53,9 +53,7 @@ You might need administrator privileges to execute these commands.
  <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/> </div>
 * Capture a variety of images of the pattern so that you have accounted for as much of the image frame as possible. Lens distortion increases radially from the center of the image and sometimes is not uniform across the image frame. To capture this lens distortion, the pattern must appear close to the edges of the captured images.
 <div align=center><img width='40%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/></div>
-<div align=center><img width='40%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
-
-
+<div align=center><img width='30%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
 
 
 <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/a.png"/> </div>
@@ -63,6 +61,7 @@ You might need administrator privileges to execute these commands.
    <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/c.png"/> </div>
     <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/d.png"/> </div>
      <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/e.png"/> </div>
+     <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/f.png"/> </div>
 
 
 The Data Browser pane displays a list of image pairs with IDs. These image pairs contain a detected pattern. To view an image, select it from the Data Browser pane.The Image pane displays the selected checkerboard image pair with green circles to indicate detected points. You can verify that the corners were detected correctly using the zoom controls. The yellow square indicates the (0,0) origin. The X and Y arrows indicate the checkerboard axes orientation.
