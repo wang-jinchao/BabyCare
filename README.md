@@ -56,6 +56,8 @@ You might need administrator privileges to execute these commands.
 <div align=center><img width='30%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
 
 
+-------
+## Stereo Calibration Results:
 <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/a.png"/> </div>
   <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/b.png"/> </div>
    <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/c.png"/> </div>
