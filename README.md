@@ -77,7 +77,9 @@ You might need administrator privileges to execute these commands.
    
 ###    Usage
 1. Training model
-```python train.py \
+
+``` 
+python train.py \
   --iteration 20000 \
   --snapshot 4000 \
   --optimizer adadelta \
@@ -85,7 +87,6 @@ You might need administrator privileges to execute these commands.
 ```
 
 2. run
-
 
 `python main.py` 
 
