@@ -5,6 +5,7 @@
 
 ### Requirement:
 * python3.6
+* tenosorflow&ge;1.12(Some problem may occur; such as [mkl](https://github.com/tensorflow/tensorflow/issues/23145))
 * opencv
 * matlab.engine (MATLAB R2014b or later)
 * numpy
