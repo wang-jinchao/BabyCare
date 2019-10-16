@@ -83,7 +83,10 @@ You might need administrator privileges to execute these commands.
   --optimizer adadelta \
   --learning_rate 1.0
 ```
-3. run
+
+2. run
+
+
 `python main.py` 
 
 ## Expression Detection
