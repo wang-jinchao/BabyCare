@@ -76,8 +76,16 @@ You might need administrator privileges to execute these commands.
 &emsp;&emsp;Through Hough Transform to detection line and using convex hulls together to measure the minimum pixel distance on the image. Using the Transformation from the 3D space to the pixel plane, with the method of binocular vision to calculate the height from the camera to the plane
    
 ###    Usage
-`python main.py`
-scsd
-    ## Expression Detection
+1. Training model
+```python train.py \
+  --iteration 20000 \
+  --snapshot 4000 \
+  --optimizer adadelta \
+  --learning_rate 1.0
+```
+3. run
+`python main.py` 
+
+## Expression Detection
 TBD
     
