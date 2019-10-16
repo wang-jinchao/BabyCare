@@ -56,7 +56,6 @@ You might need administrator privileges to execute these commands.
 <div align=center><img width='30%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
 
 
--------
 ## Stereo Calibration Results:
 <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/a.png"/> </div>
   <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/b.png"/> </div>
@@ -65,8 +64,11 @@ You might need administrator privileges to execute these commands.
      <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/e.png"/> </div>
      <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/f.png"/> </div>
 
+##   Experimental model
+ <div align=center><img width='80%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/325.png"/> </div>
 ## Distance Measurement
-Through Hough Transform to detection line and using convex hulls together to measure the minimum pixel distance on the image. Using the Transformation from the 3D space to the pixel plane, with the method of binocular vision to calculate the height from the camera to the plane
+&emsp;&emsp;Through Hough Transform to detection line and using convex hulls together to measure the minimum pixel distance on the image. Using the Transformation from the 3D space to the pixel plane, with the method of binocular vision to calculate the height from the camera to the plane
+     <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/g.png"/> </div>
 ## Expression Detection
 TBD
     
