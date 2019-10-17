@@ -39,9 +39,9 @@ You might need administrator privileges to execute these commands.
 &emsp;&emsp;To improve the results, use between 10 and 20 images of the calibration pattern. The calibrator requires at least three images. Use uncompressed images or lossless compression formats such as **PNG**. The calibration pattern and the camera setup must satisfy a set of requirements to work with the calibrator. 
  &emsp;&emsp;The checkerboard pattern you use must not be square. One side must contain an even number of squares and the other side must contain an odd number of squares. Therefore, the pattern contains two black corners along one side and two white corners on the opposite side. This criteria enables the app to determine the orientation of the pattern. The calibrator assigns the longer side to be the x-direction.
 
-| Size  | Formats | Number<span class="Apple-tab-span" style="white-space:pre"></span> | Spacing  |
+| Size | Formats | Number<span class="Apple-tab-span" style="white-space:pre"></span> | Spacing |
 | :-: | :-: | :-: | :-: |
-| A3 | 420mm×297mm | 10*7 | 42 |
+| A3 | 420mm×297mm | 10*7 | 42mm |
 
 * Attach the checkerboard printout to a flat surface. Imperfections on the surface can affect the accuracy of the calibration.
 * Measure one side of the checkerboard square. You need this measurement for calibration. The size of the squares can vary depending on printer settings.
@@ -51,6 +51,7 @@ You might need administrator privileges to execute these commands.
 * Place the checkerboard at an angle less than 45 degrees relative to the camera plane.
 *  Make sure the checkerboard pattern is fully visible in both images of each stereo pair.
  <div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/cameracalibrator_fov2.png"/> </div>
+ 
 * Capture a variety of images of the pattern so that you have accounted for as much of the image frame as possible. Lens distortion increases radially from the center of the image and sometimes is not uniform across the image frame. To capture this lens distortion, the pattern must appear close to the edges of the captured images.
 <div align=center><img width='40%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_radial_distortion.png"/></div>
 <div align=center><img width='30%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/calibration_tangentialdistortion.png"/></div>
