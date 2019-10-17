@@ -87,10 +87,13 @@ python train.py \
   --learning_rate 1.0
 ```
 
-2. run
+1. run  
 
-`python main.py` 
+
+```
+python main.py
+``` 
 
 ## Expression Detection
 TBD
-    
+
