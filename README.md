@@ -37,7 +37,6 @@ You might need administrator privileges to execute these commands.
 
 ### chessboard :
 &emsp;&emsp;To improve the results, use between 10 and 20 images of the calibration pattern. The calibrator requires at least three images. Use uncompressed images or lossless compression formats such as **PNG**. The calibration pattern and the camera setup must satisfy a set of requirements to work with the calibrator.
-
 &emsp;&emsp;The checkerboard pattern you use must not be square. One side must contain an even number of squares and the other side must contain an odd number of squares. Therefore, the pattern contains two black corners along one side and two white corners on the opposite side. This criteria enables the app to determine the orientation of the pattern. The calibrator assigns the longer side to be the x-direction.
 
 | Size | Formats | Number<span class="Apple-tab-span" style="white-space:pre"></span> | Spacing |
