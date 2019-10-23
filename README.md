@@ -10,6 +10,7 @@
 * opencv
 * matlab.engine (MATLAB R2014b or later)
 * numpy
+* dlib
 ----
 ### To install the engine API, choose one of the following.
 
