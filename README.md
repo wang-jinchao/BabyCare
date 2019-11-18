@@ -1,7 +1,7 @@
 # BabyCare
 &emsp;&emsp;Infant monitoring application based on deep learning and stereo vision
 * [x] Distance Measurement
-* [ ] Expression Detection
+* [x] Expression Detection
 <div align=center><img  src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/gifhome_480x360.gif"/></div>
 
 ### Requirement:
@@ -97,5 +97,5 @@ python main.py
 ``` 
 
 ## Expression Detection
-TBD
 
+<div align=center><img width='50%' src = "https://github.com/wang-jinchao/BabyCare/blob/master/image/facial.png"/> </div>
